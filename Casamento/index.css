@@ -1,0 +1,163 @@
+/* Definindo a fonte padrão e o estilo geral */
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo da navegação */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center; /* Centraliza o conteúdo dentro da navegação */
+}
+
+.lista-barra {
+    display: inline-block; /* Torna a lista centralizada na página */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.barra {
+    margin: 0 20px;
+}
+
+.barra a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.barra a:hover {
+    color: #f64348;
+}
+
+/* Estilo do header */
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home__background {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fore__ground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.home__tittle {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.home__text {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 40px 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section__text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+
+.section__tittle {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.section_img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Estilo para os padrinhos e madrinhas */
+.madrinhasPadrinhos {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #f64348;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer svg {
+    fill: #f64348;
+    margin: 0 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home__tittle {
+        font-size: 35px;
+    }
+
+    .home__text {
+        font-size: 16px;
+    }
+
+    .section__tittle {
+        font-size: 24px;
+    }
+
+    .section__text {
+        font-size: 16px;
+    }
+}
